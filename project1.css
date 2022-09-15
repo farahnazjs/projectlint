@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* begin navbar */
+.menu{
+    width: 100%;
+    height: 200px;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: 1px solid;
+   color: rgb(175, 129, 68);
+   margin-top: 10px;
+}
+.menu>figure>img{
+    width: 300px;
+    height: inherit;
+    margin-left: 30px;
+}
+.menu>nav>ul{
+    width:700px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu>nav>ul>li{
+   width: 100%;
+
+}
+.menu>nav>ul>li>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(175, 129, 68);
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Optima',Helvetica,Arial,sans-serif ;
+    transition: 0.5s;
+}
+.menu>nav>ul>li>a:hover{
+    border-bottom: 2px solid rgb(216, 177, 126) ;
+    color:rgb(216, 177, 126) ;
+    letter-spacing: 2px;
+}
+/* end navbar */
+/* begin page1 */
+.p1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img14/Image\ 12-3-1400\ AP\ at\ 19.52.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p1>h1{
+    font-size: 40px;
+    line-height: 1.3;
+    margin-left: 10%;
+    color: #555;
+}
+.p1>p{
+    font-size: 20px;
+    color: #787878;
+    margin-top: 40px;
+    margin-left:6% ;
+}
+.p1>button,
+.p3>div>button,
+.p4>button{
+    width: 170px;
+    height: 50px;
+    background-color: #b5985a;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.822);
+    margin-left:17% ;
+    margin-top: 2%;
+    text-transform: capitalize;
+    transition: 1s;
+    cursor: pointer;
+}
+.p1>button:hover,
+.p3>div>button:hover
+,.p4>button:hover{
+    background-color:#8f887adc ;
+    color: rgb(179, 142, 104);
+    border-radius: 20px;
+    letter-spacing: 2px;
+    box-shadow: 20px 20px 10px -10px #666;
+}
+/* end page1 */
+/* begin page2 */
+.p2{
+    width: 80%;
+    height: 120vh;
+    background-color:#f2f2f2;
+    margin-top: 6%;
+    margin-left: 10%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p2>section{
+    position: absolute;
+    width: 75%;
+    height: 95vh;
+    background-color: white;
+    margin-top: 8%;
+    margin-left: 12%;
+
+}
+.p2>figure>img{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    margin-top: 40px;
+    transition: 0.4s;
+}
+.p2>figure>img:hover{
+    border: 3px solid rgba(61, 57, 57, 0.918);
+    outline:2px solid rgba(61, 57, 57, 0.918);
+    outline-offset: 5px;
+}
+.content{
+    width: 50%;
+    background-color: wheat;
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    padding-top: 40px;
+
+}
+.content>div>span{
+    font-size: 16px;
+    font-family: 'Optima',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    line-height: 21px;
+    color: #555;
+    margin-left: 58%;
+}
+.content>div>h2{
+    font-size: 25px;
+    font-family:'Optima',Helvetica,Arial,sans-serif ;
+    font-weight: 400;
+    color: #555;
+    margin-left: 60%;
+    margin-top: 40px;
+}
+.content>div>p{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2rem;
+    margin-left: 60%;
+    margin-top: 30px;
+}
+.content>div>div{
+    border: 2px solid rgba(85, 85, 85, 0.658);
+    width: 170px;
+    height: 50px;
+    font-family:'Optima',Helvetica,Arial,sans-serif ;
+    color:rgba(85, 85, 85, 0.897) ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 60%;
+    margin-top: 25px;
+    font-weight: 300;
+    transition: 0.7s;
+}
+.content>div>div:hover{
+    background-color:#917236;
+    color: rgba(255, 255, 255, 0.911);
+    border: 2px solid #917236;
+    letter-spacing: 3px;
+}
+.al>img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* end page2 */
+/* begin page3 */
+.p3{
+    width: 90%;
+    height: 70vh;
+    background-image: url(img14/axback.jpg);
+    background-size: cover;
+    margin-left: 5%;
+    margin-top: 50px;
+    transition: 0.5s;
+    background-attachment: fixed;
+}
+.p3:hover{
+    border-radius: 50px;
+}
+.p3>div{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 10%;
+    margin-left: 5%;
+}
+.p3>div>h1{
+    font-size: 45px;
+    font-family:'Optima',Helvetica,Arial,sans-serif ;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.911);
+}
+.p3>div>p{
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    line-height: 1.5rem;
+    color: white;
+    font-weight: 400;
+    margin-top: 8%;
+    transition: 0.5s;
+}
+.p3>div>p:hover{
+    letter-spacing: 4px;
+}
+/* page4 begin */
+.p4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    justify-content: space-around;
+    align-content: space-around;
+    transition: 1s;
+    position: relative;
+    margin-top: 10%;
+}
+.p4>h2{
+    width: 100%;
+    height: 100px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    color:#555 ;
+}
+
+.p4>article>img{
+    margin-top: 50px;
+    object-fit: cover;
+    transition: 1s;
+    position: relative;
+    border-radius: 50% 20px;
+}
+
+.p4>article>img:hover{
+    border-radius: 20px 50%;
+    box-shadow: 20px 20px 5px -5px #666;
+}
+.p4>button{
+    margin-right: 250px;
+}
+/* pagr4 end */
+/* footer */
+ .foot{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: rgba(133, 132, 132, 0.486);
+    margin-top: 300px;
+}
+ .foot>div{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    color: #917236;
+    align-content: space-between;
+}
+.foot>section{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    color: #917236;
+}
+.foot>section{
+  margin-left: 500px;
+} 
